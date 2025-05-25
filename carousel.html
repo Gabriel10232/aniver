@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel de Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="carousel-container">
+        <h2>Carrossel de Imagens</h2>
+        <div class="carousel" id="carousel">
+            <img src="../img.png" alt="Imagem 1" class="carousel-img active">
+            <img src="../img2.png" alt="Imagem 2" class="carousel-img">
+            <img src="../img3.png" alt="Imagem 3" class="carousel-img">
+            <img src="../img4.png" alt="Imagem 4" class="carousel-img">
+        </div>
+        <div class="carousel-controls">
+            <button id="prevBtn" aria-label="Imagem anterior">&lt;</button>
+            <button id="nextBtn" aria-label="Próxima imagem">&gt;</button>
+        </div>
+        <div class="carousel-dots">
+            <button class="dot active" aria-label="Ir para imagem 1" data-slide="0"></button>
+            <button class="dot" aria-label="Ir para imagem 2" data-slide="1"></button>
+            <button class="dot" aria-label="Ir para imagem 3" data-slide="2"></button>
+            <button class="dot" aria-label="Ir para imagem 4" data-slide="3"></button>
+        </div>
+    </div>
+    <div class="navigation-buttons">
+        <button class="snake-btn" onclick="window.location.href='snake.html'">Jogar Cobrinha</button>
+        <button class="back-btn" onclick="window.location.href='index.html'">Voltar ao Login</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
